@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+.header {
+  background-color: #0f0230;
+}
+.button {
+  padding: 10px 14px;
+  box-shadow: 0px 0px 11px 2px #eb00ff;
+  border-radius: 100px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  background: linear-gradient(to bottom, #3a54a8, #a4149b);
+  border: 1px solid #a4149b;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.button2 {
+  position: relative;
+  z-index: 2;
+  padding: 9px 35px;
+  box-shadow: 0px 0px 11px 2px #eb00ff;
+  border-radius: 100px;
+  letter-spacing: 0em;
+  background: linear-gradient(to bottom, #3a54a8, #a4149b);
+  border: 1px solid #a4149b;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 25px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  color: #ffffff;
 }
+.active-div {
+  transform: translatex(-25%);
+}
+.similar {
+  transform: translatex(-26px);
+  z-index: 1;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 40px;
+  padding-left: 60px;
+  border-radius: 100px;
+  letter-spacing: 0em;
+  background-color: #14114f;
+  border: 1px solid #14114f;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: capitalize;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #ffffff;
+}
+.Logo {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+.hero {
+  height: 70vh;
+  background: linear-gradient(to right, #15134f, #0f0230);
+}
+.main-left {
+  width: 35vh;
+  transform: translatex(50%);
+}
+.main-right {
+  width: 35vh;
+  transform: translatex(10%);
+}
+.fiesta {
+  width: 70%;
+  height: 77px;
+
+  font-style: normal;
+  color: white;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 77px;
+}
+.text {
+  width: 70%;
+  height: 61px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.main-left-second {
+  margin-left: 15px;
+}
+.astro {
+  width: 244px;
+  height: 51px;
+  background: url(./images/astro1.png);
+}
+.body {
+  background-color: #0f0230;
+  position: relative;
+}
+.body-1st {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15%;
+  align-items: center;
+  margin-top: 65px;
+}
+.body-2nd {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  margin-top: 60px;
+  margin-left: 15%;
+}
+.trade {
+  margin-top: 200px;
+}
+.support {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+}
+.support-h2 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 31px;
+}
+.foot-image {
+  height: 60px;
+  width: 50px;
+  background: url(./images/Ellipse.png);
   color: white;
+  object-fit: contain;
+}
+.margin-right {
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 500px) {
+  .main-left {
+    width: 35vh;
+    transform: translatex(50%);
   }
-  to {
-    transform: rotate(360deg);
+  .main-right {
+    width: 35vh;
+    transform: translatex(-5%);
+  }
+  .trade {
+    margin-top: 100px;
+  }
+  .trade img {
+    width: 250px;
+  }
+  .footer-icons {
+    display: none;
+  }
+  .chain {
+    text-align: right;
+  }
+  .updated {
+    display: none;
   }
 }
